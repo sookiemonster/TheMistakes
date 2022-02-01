@@ -1,8 +1,8 @@
 from flask import Flask, Blueprint, request, session, render_template, redirect, g
 import os, sqlite3, json, urllib
-from db import init_db
 
-import auth, game, db, shop, leaderboard, profile
+from app import auth, game, db, shop, leaderboard, profile
+from app.db import init_db
 
 
 def create_app():

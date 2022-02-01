@@ -1,6 +1,6 @@
 from flask import Flask, Blueprint, request, session, render_template, redirect, g
 import sqlite3, json, urllib, os, random
-import auth, db
+from app import auth, db
 bp = Blueprint('game', __name__)
 
 """
